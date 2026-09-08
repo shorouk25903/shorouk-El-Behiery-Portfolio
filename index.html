@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shorouk El-Behiery | Cybersecurity & Penetration Testing Portfolio</title>
+  <meta name="description"
+    content="Professional portfolio of Shorouk El-Behiery - Cybersecurity Student, CCNA Certified, DEPI Ethical Hacking Trainee, Vulnerability Assessor, and Penetration Tester based in Kafr ash Shaykh, Egypt.">
+  <meta name="keywords"
+    content="Shorouk El-Behiery, Cybersecurity, Penetration Testing, Vulnerability Assessment, Network Security, CCNA, DEPI, Kali Linux, Metasploit, Burp Suite, CTF">
+  <meta name="author" content="Shorouk El-Behiery">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Glassmorphism Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Cyber Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <span class="loading-initials">SEB</span>
+        <div class="loading-ring"></div>
+      </div>
+      <div class="loading-text-wrapper">
+        <span class="loading-role-text" id="loadingRoleText">[System Initializing...]</span>
+      </div>
+      <div class="loading-bar-container">
+        <div class="loading-bar" id="loadingBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Ambient Glowing Shapes -->
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+  <div class="bg-shape shape-3"></div>
+
+  <!-- Navigation Header -->
+  <header id="header">
+    <nav class="container nav-container">
+      <a href="#" class="logo">
+        SHOROUK<span>.SEC</span>
+        <span class="logo-tag">CCNA</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Labs & Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark/Light Theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon" style="display:none;"></i>
+        </button>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="greeting-badge">
+            <i class="fa-solid fa-terminal"></i>
+            <span>👋 Welcome, I'm</span>
+          </div>
+          <h1 class="name">Shorouk El-Behiery</h1>
+          <h2 class="role">
+            <span id="typingText">Vulnerability Assessor</span>
+            <span class="typing-cursor"></span>
+          </h2>
+          <p class="summary">
+            Cybersecurity student & DEPI Trainee specializing in vulnerability assessment, penetration testing, and network defense. CCNA certified with hands-on experience in Red & Blue Team exercises. Passionate about building resilient systems and contributing to a safer digital world.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">
+              View Labs & Projects <i class="fa-solid fa-shield-halved"></i>
+            </a>
+            <a href="assets/CV-Shorouk-Elbehiery.pdf" download class="btn btn-outline">
+              Download CV <i class="fa-solid fa-file-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              Contact Me <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <a href="#contact" class="btn btn-accent">
+              Hire Me <i class="fa-solid fa-user-shield"></i>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/shorouk-elbehiery" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:shoroukelbhiery@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+2001026012863" class="social-icon" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image reveal">
+          <div class="img-wrapper">
+            <div class="rotating-border"></div>
+            <img src="assets/profile.png" alt="Shorouk El-Behiery Profile" class="profile-photo">
+          </div>
+          <div class="floating-badge badge-1">
+            <i class="fa-solid fa-certificate"></i>
+            <span>CCNA Certified</span>
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fa-solid fa-bug"></i>
+            <span>Burp & Metasploit</span>
+          </div>
+          <div class="floating-badge badge-3">
+            <i class="fa-solid fa-network-wired"></i>
+            <span>Network Security</span>
+          </div>
+          <div class="floating-badge badge-4">
+            <i class="fa-solid fa-flag"></i>
+            <span>20+ CTF Solved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <h2 class="section-title reveal">About <span>Me</span></h2>
+        <p class="section-subtitle reveal">Combining offensive security knowledge with network architecture and infrastructure defense.</p>
+        
+        <div class="glass-card about-card reveal">
+          <div class="about-header">
+            <p>
+              I am a Cyber Security student, currently enrolled in the DEPI (Digital Egypt Pioneers Initiative) program, where I am developing my skills in ethical hacking, vulnerability assessment, and penetration testing. I hold a <strong>CCNA certification</strong>, which gives me a strong foundation in networking and infrastructure security. I also have programming knowledge in C++ and C#, and I am passionate about understanding how systems work and how to protect them.<br><br>Throughout my training at DEPI, I am learning to use industry-standard tools such as Kali Linux, Burp Suite, and Metasploit to assess network security. I am currently practicing penetration testing in simulated lab environments and studying vulnerability discovery methodologies. My CCNA background helps me connect offensive security techniques with underlying network architecture. I bring strong analytical thinking, curiosity, and a commitment to continuous self-learning to everything I do.<br><br>My long-term goal is to grow into a <strong>Cyber Security Engineer</strong> who builds resilient systems and leads red-team operations. I am committed to lifelong learning and plan to pursue professional certifications such as CEH and OSCP. I aspire to apply the knowledge I gain at DEPI to help organizations protect their digital assets and contribute to a safer digital world.
+            </p>
+          </div>
+
+          <div class="about-specialties">
+            <div class="spec-box">
+              <i class="fa-solid fa-unlock-keyhole"></i>
+              <h3>Offensive Security & Pen Testing</h3>
+              <ul>
+                <li>Vulnerability Assessment & Exploitation</li>
+                <li>Red & Blue Team Exercises</li>
+                <li>Metasploit, Burp Suite & Nessus</li>
+              </ul>
+            </div>
+            <div class="spec-box">
+              <i class="fa-solid fa-network-wired"></i>
+              <h3>Network Security & Architecture</h3>
+              <ul>
+                <li>Routing & Switching (CCNA Certified)</li>
+                <li>Web Application Security & Threat Hunting</li>
+                <li>Log Analysis & Infrastructure Defense</li>
+              </ul>
+            </div>
+            <div class="spec-box">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>Engineering & Innovation</h3>
+              <ul>
+                <li>IoT & Smart Home Systems (Arduino)</li>
+                <li>Robotics & Embedded Systems</li>
+                <li>C++ & C# Programming</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-top: 1rem;">Current Roles & Engagements</h3>
+          <div class="roles-container">
+            <div class="role-card">
+              <i class="fa-solid fa-user-graduate"></i>
+              <div class="role-info">
+                <h4>DEPI Trainee</h4>
+                <span>Ethical Hacking & Pen Testing</span>
+              </div>
+            </div>
+            <div class="role-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div class="role-info">
+                <h4>Cybersecurity Engineer Student</h4>
+                <span>HIET Kafr Elsheikh</span>
+              </div>
+            </div>
+            <div class="role-card">
+              <i class="fa-solid fa-flag"></i>
+              <div class="role-info">
+                <h4>Active CTF Competitor</h4>
+                <span>Web & Binary Exploitation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <span class="stat-number">807</span>
+            <span class="stat-label">LinkedIn Followers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">CCNA</span>
+            <span class="stat-label">Cisco Certified</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Certifications & Programs</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">DEPI</span>
+            <span class="stat-label">Pen Testing Trainee</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills section-padding">
+      <div class="container">
+        <h2 class="section-title reveal">Technical <span>Arsenal</span></h2>
+        <p class="section-subtitle reveal">Toolsets, network defense protocols, and security methodologies mastered.</p>
+
+        <div class="skills-grid reveal">
+          <!-- Category 1 -->
+          <div class="glass-card skill-category">
+            <h3><i class="fa-solid fa-bug"></i> Security Tools</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info"><span>Kali Linux</span><span>95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Burp Suite</span><span>90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Metasploit Framework</span><span>88%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Nmap & Wireshark</span><span>92%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Nessus Scanner</span><span>85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="glass-card skill-category">
+            <h3><i class="fa-solid fa-diagram-project"></i> Networking & Infrastructure</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info"><span>Routing & Switching (CCNA)</span><span>94%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="94%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Network Architecture & VLANs</span><span>90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Infrastructure Defense & ACLs</span><span>85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Cisco Packet Tracer</span><span>95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="glass-card skill-category">
+            <h3><i class="fa-solid fa-code"></i> Languages & Environments</h3>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-info"><span>C++ Programming</span><span>85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>C# Programming</span><span>80%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Windows Server & Active Directory</span><span>88%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Linux (Kali, Ubuntu)</span><span>92%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects & Security Labs Section -->
+    <section id="projects" class="projects section-padding">
+      <div class="container">
+        <h2 class="section-title reveal">Practical <span>Labs & Projects</span></h2>
+        <p class="section-subtitle reveal">Real-world simulated enterprise environments, penetration tests, and vulnerability assessments.</p>
+
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All Showcase</button>
+          <button class="filter-btn" data-filter="pentest">Penetration Testing & Labs</button>
+          <button class="filter-btn" data-filter="ctf">CTF Exploitation</button>
+          <button class="filter-btn" data-filter="networking">Network Infrastructure</button>
+        </div>
+
+        <div class="projects-grid reveal">
+          <!-- Project 1 -->
+          <div class="glass-card project-card" data-category="pentest">
+            <div class="project-img-container">
+              <div class="project-overlay-badge">Independent Lab</div>
+              <div style="height: 100%; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle, rgba(56,189,248,0.2), rgba(15,23,42,0.9));">
+                <i class="fa-solid fa-server" style="font-size: 4rem; color: var(--accent-cyan);"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Active Directory Penetration Testing Lab</h3>
+              <p class="project-desc">
+                Built a virtual enterprise network lab simulating Active Directory with Windows Server and Kali Linux. Performed recon, privilege escalation, and lateral movement using Metasploit & PowerShell.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Windows Server</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">Metasploit</span>
+                <span class="tag">PowerShell</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline open-modal-btn" data-project="ad-lab" style="width: 100%;">
+                  View Lab Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="glass-card project-card" data-category="ctf">
+            <div class="project-img-container">
+              <div class="project-overlay-badge">CTF Challenges</div>
+              <div style="height: 100%; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle, rgba(16,185,129,0.2), rgba(15,23,42,0.9));">
+                <i class="fa-solid fa-flag" style="font-size: 4rem; color: var(--accent-green);"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Capture The Flag (CTF) Competitions</h3>
+              <p class="project-desc">
+                Active participation in CTF competitions focusing on web vulnerability assessment, network packet dissection, and binary exploitation. Solved 20+ challenges successfully.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Burp Suite</span>
+                <span class="tag">Wireshark</span>
+                <span class="tag">Web Security</span>
+                <span class="tag">Exploitation</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline open-modal-btn" data-project="ctf-challenges" style="width: 100%;">
+                  View Details & Flags <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="glass-card project-card" data-category="networking">
+            <div class="project-img-container">
+              <div class="project-overlay-badge">CCNA Lab</div>
+              <div style="height: 100%; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle, rgba(168,85,247,0.2), rgba(15,23,42,0.9));">
+                <i class="fa-solid fa-network-wired" style="font-size: 4rem; color: var(--accent-purple);"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Network Architecture & Security Segmentation</h3>
+              <p class="project-desc">
+                Engineered robust campus networks in Cisco Packet Tracer incorporating VLAN segmentation, Access Control Lists (ACLs), inter-VLAN routing, and subnetting strategies.
+              </p>
+              <div class="project-tags">
+                <span class="tag">CCNA</span>
+                <span class="tag">Cisco Packet Tracer</span>
+                <span class="tag">VLANs</span>
+                <span class="tag">ACLs</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-outline open-modal-btn" data-project="network-sec" style="width: 100%;">
+                  View Topology <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Smart Home IoT -->
+          <div class="glass-card project-card" data-category="networking">
+            <div class="project-img-container">
+              <div class="project-overlay-badge">IoT Project</div>
+              <div style="height: 100%; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle, rgba(245,158,11,0.2), rgba(15,23,42,0.9));">
+                <i class="fa-solid fa-house-signal" style="font-size: 4rem; color: hsl(38, 92%, 50%);"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Home IoT System</h3>
+              <p class="project-desc">
+                Designed and implemented a Smart Home project at Simple Steps Academy, combining IoT technologies, sensor integration, and creative automation for home control systems.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Arduino</span>
+                <span class="tag">IoT</span>
+                <span class="tag">Smart Home</span>
+                <span class="tag">Sensors</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Cybersecurity Academy -->
+          <div class="glass-card project-card" data-category="pentest">
+            <div class="project-img-container">
+              <div class="project-overlay-badge">MCIT × NTI</div>
+              <div style="height: 100%; display: flex; justify-content: center; align-items: center; background: radial-gradient(circle, rgba(239,68,68,0.2), rgba(15,23,42,0.9));">
+                <i class="fa-solid fa-user-secret" style="font-size: 4rem; color: hsl(0, 84%, 60%);"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MCIT Cybersecurity Academy Training</h3>
+              <p class="project-desc">
+                Completed a comprehensive cybersecurity program by MCIT/NTI/NTRA covering Red & Blue Team exercises, web application security, threat hunting, log analysis, and vulnerability exploitation with Nessus.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Red Team</span>
+                <span class="tag">Blue Team</span>
+                <span class="tag">Nessus</span>
+                <span class="tag">Threat Hunting</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section-padding">
+      <div class="container">
+        <h2 class="section-title reveal">Certifications & <span>Credentials</span></h2>
+        <p class="section-subtitle reveal">Verified industry qualifications and active red-team learning tracks.</p>
+
+        <div class="cert-grid reveal">
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-info">
+              <h4>Cisco Certified Network Associate (CCNA)</h4>
+              <div class="cert-issuer">Cisco Networking Academy</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Routing & Switching, Network Security Fundamentals, Infrastructure Defense.</p>
+              <span class="cert-badge-status status-completed"><i class="fa-solid fa-circle-check"></i> Certified</span>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <div class="cert-info">
+              <h4>DEPI Initiative Training</h4>
+              <div class="cert-issuer">Digital Egypt Pioneers Initiative</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Ethical Hacking, Vulnerability Assessment, and Penetration Testing Methodologies.</p>
+              <span class="cert-badge-status status-completed"><i class="fa-solid fa-circle-check"></i> Completed</span>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="cert-info">
+              <h4>Cybersecurity Academy (Undergraduate Level)</h4>
+              <div class="cert-issuer">MCIT × NTI × NTRA — Creativa Innovation Hubs</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Network Security, Kali Linux, Nessus, Burp Suite, Metasploit, Red & Blue Team Exercises, Web App Security, Threat Hunting & Log Analysis.</p>
+              <span class="cert-badge-status status-completed"><i class="fa-solid fa-circle-check"></i> Completed — Aug 2025</span>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="cert-info">
+              <h4>Robotics Course — Level One</h4>
+              <div class="cert-issuer">Simple Steps Training & Development</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Arduino, Motor Shield, Sensors, TinkerCad Circuit Simulation, and Arduino Programming.</p>
+              <span class="cert-badge-status status-completed"><i class="fa-solid fa-circle-check"></i> Completed — Jan 2025</span>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-mask"></i></div>
+            <div class="cert-info">
+              <h4>Certified Ethical Hacker (CEH)</h4>
+              <div class="cert-issuer">EC-Council Certification Track</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Offensive Tactics, Threat Vectors, Enumeration, and Malware Analysis.</p>
+              <span class="cert-badge-status status-progress"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-icon"><i class="fa-solid fa-terminal"></i></div>
+            <div class="cert-info">
+              <h4>Offensive Security Certified Professional (OSCP)</h4>
+              <div class="cert-issuer">OffSec Academy Track</div>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem;">Hands-on Penetration Testing, Exploit Development, and Lab Operations.</p>
+              <span class="cert-badge-status status-progress"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="experience section-padding">
+      <div class="container">
+        <h2 class="section-title reveal">Education & <span>Journey</span></h2>
+        <p class="section-subtitle reveal">Academic background and security specialization path.</p>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-date">Oct 2023 – Jul 2028</div>
+              <h3 style="font-size: 1.15rem; font-weight: 700;">B.E. Electrical, Electronics & Cybersecurity Engineering</h3>
+              <p style="color: var(--accent-cyan); font-size: 0.9rem; margin-bottom: 0.5rem;">Higher Institute of Engineering and Technology - Kafr Elsheikh, Egypt</p>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Studying hardware security, digital electronics, telecommunications, network protocols, and software design.</p>
+              <div style="margin-top: 0.6rem; display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                <span class="tag">Grade: Second Grade</span>
+                <span class="tag">Student Clubs Member</span>
+                <span class="tag">Workshops & Training</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-date">Jul 2026 – Present</div>
+              <h3 style="font-size: 1.15rem; font-weight: 700;">DEPI Ethical Hacking & Pen Testing Trainee</h3>
+              <p style="color: var(--accent-cyan); font-size: 0.9rem; margin-bottom: 0.5rem;">Digital Egypt Pioneers Initiative (DEPI)</p>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Intensive practical program in the Infrastructure & Security track — Vulnerability Analyst and Penetration Tester role. Hands-on experience with Kali Linux, Burp Suite, Metasploit, risk management, and enterprise security auditing. Remote training.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-date">2024 – 2025</div>
+              <h3 style="font-size: 1.15rem; font-weight: 700;">CCNA Certification & Network Infrastructure</h3>
+              <p style="color: var(--accent-cyan); font-size: 0.9rem; margin-bottom: 0.5rem;">Cisco Certified Network Associate</p>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Mastered IP routing, switching, VLAN isolation, firewall rules, ACL security policies, and packet analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+        <p class="section-subtitle reveal">Available for cybersecurity consultancies, penetration testing projects, and engineering opportunities.</p>
+
+        <!-- Glassmorphism Call To Action (CTA) Banner -->
+        <div class="cta-banner reveal">
+          <h3 class="cta-title">Ready to Secure Your Digital Infrastructure?</h3>
+          <p class="cta-desc">
+            Whether you need a thorough vulnerability assessment, penetration testing for your web applications, or an enterprise network audit, let's collaborate to safeguard your systems against cyber threats.
+          </p>
+          <div class="cta-btns">
+            <a href="#contactForm" class="btn btn-primary">
+              Send Direct Inquiry <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <a href="https://wa.me/2001026012863" target="_blank" class="btn btn-accent">
+              Quick Chat on WhatsApp <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="assets/CV-Shorouk-Elbehiery.pdf" download class="btn btn-outline">
+              Download Full Resume <i class="fa-solid fa-file-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-container reveal">
+          <div class="contact-info">
+            <div class="glass-card info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <label>Location</label>
+                <p>Kafr ash Shaykh, Egypt</p>
+              </div>
+            </div>
+
+            <div class="glass-card info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-text">
+                <label>Email Address</label>
+                <p><a href="mailto:shoroukelbhiery@gmail.com">shoroukelbhiery@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="glass-card info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <label>Phone / WhatsApp</label>
+                <p><a href="tel:+2001026012863">+20 010 2601 2863</a></p>
+              </div>
+            </div>
+
+            <div class="glass-card info-item">
+              <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="info-text">
+                <label>LinkedIn Profile</label>
+                <p><a href="https://linkedin.com/in/shorouk-elbehiery" target="_blank">linkedin.com/in/shorouk-elbehiery</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="formName">Your Name</label>
+                <input type="text" id="formName" class="form-control" placeholder="e.g. Alex Morgan" required>
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Your Email</label>
+                <input type="email" id="formEmail" class="form-control" placeholder="e.g. alex@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="formSubject">Subject</label>
+                <input type="text" id="formSubject" class="form-control" placeholder="Penetration Testing / Project Inquiry">
+              </div>
+              <div class="form-group">
+                <label for="formMessage">Message</label>
+                <textarea id="formMessage" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%;">
+                Send Security Inquiry <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div id="projectModal" class="modal-overlay">
+    <div class="glass-card modal-container">
+      <button id="modalClose" class="modal-close" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modalTitle" style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 1rem;">Project Details</h3>
+      <div id="modalBody">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 <strong>Shorouk El-Behiery</strong>. All rights reserved. Designed with Glassmorphism & Cyber Aesthetics.</p>
+    </div>
+  </footer>
+
+  <!-- Portfolio Custom Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
